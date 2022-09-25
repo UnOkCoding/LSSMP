@@ -20,12 +20,8 @@ import org.bukkit.inventory.Recipe;
 
 public class ReviveBeacon extends CustomItem {
     public ReviveBeacon(SMPPlugin plugin) {
-        super(plugin, "revive_beacon", MessageBuilder.messageOf("§c§lRevive Beacon"));
-        addKey("beacon")
-                .setDecreaseOnUse(true)
-                .bindConfig("items.beacon")
-                .bindConfigOptions("beaconRecipe.yml", "options")
-                .reload();
+        super(plugin, "beacon", MessageBuilder.messageOf("§c§lRevive Beacon"));
+        addKey("beacon");
     }
 
     @Override
